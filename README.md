@@ -1,5 +1,5 @@
 # UnrealSharpGAS
-Work in progress GameplayAbilitySystem bindings for C# using UnrealSharp.
+Work in progress `GameplayAbilitySystem` bindings for C# using UnrealSharp.
 
 Documentation will come soon.
 
