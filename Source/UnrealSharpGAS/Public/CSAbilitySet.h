@@ -12,8 +12,6 @@ class UCSGameplayAbility;
 class UCSAbilitySystemComponent;
 class UAttributeSet;
 class UGameplayEffect;
-class UEmberAbilitySystemComponent;
-class UEmberGameplayAbility;
 class UObject;
 
 USTRUCT(BlueprintType)
