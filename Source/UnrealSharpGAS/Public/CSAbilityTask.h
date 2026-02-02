@@ -8,6 +8,8 @@ class UAbilitySystemComponent;
 class UGameplayAbility;
 class UGameplayTasksComponent;
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCSAbilityTaskDelegate, UCSAbilityTask*, AbilityTask);
+
 UCLASS()
 class UNREALSHARPGAS_API UCSAbilityTask : public UAbilityTask
 {
@@ -118,4 +120,10 @@ public:
 	
 	UFUNCTION(meta = (ScriptMethod))
 	static UCSAbilityTask* CreateAbilityTaskAndRunIt(TSubclassOf<UCSAbilityTask> Task, UGameplayAbility* InstigatorAbility, FName TaskInstanceName = NAME_None);
+	
+	UPROPERTY(BlueprintAssignable)
+	FCSAbilityTaskDelegate OnTaskActivated;
+	
+	UPROPERTY(BlueprintAssignable)
+	FCSAbilityTaskDelegate OnTaskEnded;
 };
