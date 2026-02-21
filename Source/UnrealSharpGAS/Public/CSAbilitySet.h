@@ -15,7 +15,7 @@ class UGameplayEffect;
 class UObject;
 
 USTRUCT(BlueprintType)
-struct FCSAbilitySet_GameplayAbility
+struct UNREALSHARPGAS_API FCSAbilitySet_GameplayAbility
 {
 	GENERATED_BODY()
 	
@@ -30,7 +30,7 @@ struct FCSAbilitySet_GameplayAbility
 };
 
 USTRUCT(BlueprintType)
-struct FCSAbilitySet_GameplayEffect
+struct UNREALSHARPGAS_API FCSAbilitySet_GameplayEffect
 {
 	GENERATED_BODY()
 	
@@ -42,7 +42,7 @@ struct FCSAbilitySet_GameplayEffect
 };
 
 USTRUCT(BlueprintType)
-struct FCSAbilitySet_AttributeSet
+struct UNREALSHARPGAS_API FCSAbilitySet_AttributeSet
 {
 	GENERATED_BODY()
 	
@@ -51,7 +51,7 @@ struct FCSAbilitySet_AttributeSet
 };
 
 USTRUCT(BlueprintType)
-struct FCSAbilitySet_GrantedHandles
+struct UNREALSHARPGAS_API FCSAbilitySet_GrantedHandles
 {
 	GENERATED_BODY()
 

@@ -176,6 +176,9 @@ public:
 	
 	UFUNCTION(Server, Reliable, meta = (ScriptMethod))
 	void ServerGiveAbilityAndActivateOnceWithEvent(TSubclassOf<UGameplayAbility> InAbilityClass, FGameplayEventData EventData, int32 Level = 1, int32 OptionalInputID = -1, UObject* OptionalSourceObject = nullptr);
+	
+	UFUNCTION(Server, Reliable, meta = (ScriptMethod))
+	void ServerSendGameplayEventToActor(AActor* Actor, const FGameplayTag& EventTag, const FGameplayEventData& Payload);
 
 	UFUNCTION(meta = (ScriptMethod))
 	void K2_SetRemoveAbilityOnEnd(FGameplayAbilitySpecHandle AbilitySpecHandle);

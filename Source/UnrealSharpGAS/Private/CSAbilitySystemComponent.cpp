@@ -1,5 +1,6 @@
 #include "CSAbilitySystemComponent.h"
-#include "AbilitySystemGlobals.h"
+
+#include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemLog.h"
 #include "GameplayCueManager.h"
 #include "GameplayEffectExtension.h"
@@ -428,6 +429,11 @@ void UCSAbilitySystemComponent::ServerGiveAbilityAndActivateOnceWithEvent_Implem
 	UObject* OptionalSourceObject)
 {
 	GiveAbilityAndActivateOnceWithEvent(InAbilityClass, EventData, Level, OptionalInputID, OptionalSourceObject);
+}
+
+void UCSAbilitySystemComponent::ServerSendGameplayEventToActor_Implementation(AActor* Actor, const FGameplayTag& EventTag, const FGameplayEventData& Payload)
+{
+	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(Actor, EventTag, Payload);
 }
 
 void UCSAbilitySystemComponent::K2_SetRemoveAbilityOnEnd(FGameplayAbilitySpecHandle AbilitySpecHandle)

@@ -26,8 +26,10 @@ public class UnrealSharpGAS : ModuleRules
 				"GameplayAbilities",
 				"GameplayTags",
 				"GameplayTasks", 
-				"UnrealSharpCore"
+				"UnrealSharpCore",
 			}
 			);
+		
+		PublicDefinitions.Add("FlattenGlue=1");
 	}
 }

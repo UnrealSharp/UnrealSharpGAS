@@ -57,6 +57,11 @@ Build/*
 Build/*/**
 !Build/*/PakBlacklist*.txt
 
+obj/
+bin/
+RuntimeGlue/
+*.csproj
+
 # Don't ignore icon files in Build
 !Build/**/*.ico
 

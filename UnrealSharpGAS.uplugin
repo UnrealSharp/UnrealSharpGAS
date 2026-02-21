@@ -18,17 +18,21 @@
 			"Name": "UnrealSharpGAS",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "UnrealSharpGASEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
 		}
 	],
-    "Plugins": 
-    [
-        {
-            "Name": "GameplayAbilities",
-            "Enabled": true
-        },
-        {
-              "Name": "UnrealSharp",
-              "Enabled": true
-        }
-    ]
+	"Plugins": [
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "UnrealSharp",
+			"Enabled": true
+		}
+	]
 }
